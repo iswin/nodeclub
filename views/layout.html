@@ -61,6 +61,22 @@
   <% } %>
   <meta content="_csrf" name="csrf-param">
   <meta content="<%= csrf %>" name="csrf-token">
+  <style type="text/css">
+    .navbar{
+      background: #fff;
+    }
+
+    .navbar .nav>li>a:link{
+      color: #000;
+    }
+
+    .navbar .nav > li > a:active,
+    .navbar .nav > li > a:hover,
+    .navbar .nav > li > a:visited,
+    .navbar .nav > li > a:focus {
+    color: #000;
+   }
+</style>
 </head>
 <body>
 <!-- navbar -->
@@ -90,7 +106,6 @@
             </a>
         </li>
         <% } %>
-        <li><a href='/getstart'>新手入门</a></li>
         <li><a href='/api'>API</a></li>
         <%
         var site_navs = config.site_navs || [];
